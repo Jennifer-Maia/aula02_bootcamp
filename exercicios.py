@@ -14,11 +14,16 @@
 # 3. Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
 # 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
 
-        #num_01 = int(input("Insira um número inteiro: "))
-        #num_02 = int(input("Insira outro número inteiro: "))
+try:
+    num_01 = int(input("Insira um número inteiro: "))
+    num_02 = int(input("Insira outro número inteiro: "))
 
-        #resultado = (num_01 // num_02)
-        #print (resultado)
+    resultado = (num_01 // num_02)
+    print (resultado)
+except ZeroDivisionError:
+    print("Erro de divisão por zero")
+except KeyboardInterrupt: #posso colocar somente "except" mas se der mas pra especificar é melhor.
+    print("Acho que você não digitou um número")
 
 # 5. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
 
@@ -42,11 +47,11 @@
 # 13. Desenvolva um programa que peça ao usuário para inserir uma frase e, em seguida, imprima esta frase sem espaços em branco no início e no final.
 # 14. Faça um programa que peça ao usuário para digitar uma data no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.
 
-data = input("Digite uma data no formato dd/mm/aaaa: ")
-lista_data = data.split("/")
-print(f"O elemento 1 é o: {lista_data[0]}")
-print(f"O elemento 2 é o: {lista_data[1]}")
-print(f"O elemento 3 é o: {lista_data[2]}")
+# data = input("Digite uma data no formato dd/mm/aaaa: ")
+# lista_data = data.split("/")
+# print(f"O elemento 1 é o: {lista_data[0]}")
+# print(f"O elemento 2 é o: {lista_data[1]}")
+# print(f"O elemento 3 é o: {lista_data[2]}")
 
 # 15. Escreva um programa que concatene duas strings fornecidas pelo usuário.
 
